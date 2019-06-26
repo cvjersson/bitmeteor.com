@@ -8,6 +8,31 @@ body {
   background:rgb(57,66,71);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+main {
+  width :1250px;
+  height:auto;
+  margin:0 auto;
+  position: relative;
+}
+
+
+/**
+* HEADER
+*/
+.header {
+  width     : 100%;
+  min-height: 70px;
+  position: absolute;
+  z-index : 10;
+  display : flex;
+  padding : 0 24px;
+  align-items    : center;
+  justify-content: space-between;
+}
 
 
 /**
@@ -25,19 +50,20 @@ body {
   width           :100%;
   height          :100vh;
   background-image:url(./assets/images/backgrounds/astronomy-atmosphere.jpg);
-  background-size:cover;
+  background-size :cover;
   background-position:center;
-  background-repeat: no-repeat;
-  position: relative;
+  background-repeat  : no-repeat;
+  position           : relative;
 }
 
 .rear-wall::before {
   content: "";
   display:block;
-  width:100%;
-  height:100%;
+  width   :100%;
+  height  :100%;
   position: absolute;
-  background-image: linear-gradient(to top, rgb(57,66,71), rgba(57,66,71,.7));
-  top:0;
+  background-image: linear-gradient(to top, rgb(57,66,71), rgba(57,66,71,.85));
+  background-image: -webkit-linear-gradient(to top, rgb(57,66,71), rgba(57,66,71,.85));
+  top :0;
   left:0;
 }

@@ -5,9 +5,11 @@ import './index.css';
 function App() {
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
+      <div className="header">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
       <div className="rear-wall">
-        
+
       </div>
     </div>
   );
